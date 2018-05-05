@@ -9,3 +9,5 @@ exclude:
   - bin
   - LICENSE.txt
   - README.md
+
+theme: jekyll-theme-scrawl
