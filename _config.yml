@@ -1,0 +1,11 @@
+title: "Jekyll Theme Scrawl"
+
+sass:
+  style: compressed
+
+exclude:
+  - '*.gemspec'
+  - 'Gemfile*'
+  - bin
+  - LICENSE.txt
+  - README.md
