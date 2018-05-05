@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # The Scrawl theme
 
 Scrawl is a Jekyll theme based on [the Primer theme](https://github.com/pages-themes/primer) by GitHub.
