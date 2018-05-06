@@ -12,7 +12,5 @@ exclude:
   - LICENSE.txt
   - README.md
 
-theme: jekyll-theme-scrawl
-
 plugins:
   - "jekyll-github-metadata"
