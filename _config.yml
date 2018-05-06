@@ -13,4 +13,5 @@ exclude:
   - README.md
 
 plugins:
-  - "jekyll-github-metadata"
+  - jekyll-github-metadata
+  - jekyll-seo-tag
