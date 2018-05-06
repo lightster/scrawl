@@ -1,4 +1,6 @@
 title: "Jekyll Theme Scrawl"
+description: >
+  Scrawl is a Jekyll theme based on <a href="https://github.com/pages-themes/minimal">Minimal</a>
 
 sass:
   style: compressed
@@ -11,3 +13,6 @@ exclude:
   - README.md
 
 theme: jekyll-theme-scrawl
+
+plugins:
+  - "jekyll-github-metadata"
