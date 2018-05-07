@@ -26,8 +26,7 @@ defaults:
       path: ""
       type: "pages"
     values:
-      layout: default
-      hide_in_nav: false
+      layout: post
 
 collections:
   pages:
