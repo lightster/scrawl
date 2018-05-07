@@ -8,7 +8,7 @@
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
-  <body>
+  <body class="{{ page.width }}">
 
     <div class="container">
 
@@ -74,15 +74,15 @@
 
       <section class="markdown-body">
         {{ content }}
-      </section>
 
-      <footer>
-        {% if site.github.private != true and site.github.license %}
-        <p>
-          This site is open source. {% github_edit_link "Improve this page" %}.
-        </p>
-        {% endif %}
-      </footer>
+        <footer>
+          {% if site.github.private != true and site.github.license %}
+          <p>
+            This site is open source. {% github_edit_link "Improve this page" %}.
+          </p>
+          {% endif %}
+        </footer>
+      </section>
 
     </div>
 
