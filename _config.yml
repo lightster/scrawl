@@ -1,4 +1,9 @@
-title: "Jekyll Theme Scrawl"
+title: "Scrawl Jekyll Theme"
+description: >
+  Based on
+  <a href="https://github.com/pages-themes/primer">Primer</a>,
+  inspired by
+  <a href="https://github.com/pages-themes/minimal">Minimal</a>
 
 sass:
   style: compressed

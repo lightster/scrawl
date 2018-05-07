@@ -1,0 +1,51 @@
+body {
+  padding: 0 25px;
+}
+
+.container {
+  width: 1012px;
+  margin: 0 auto;
+}
+
+header {
+  width: 270px;
+  float: left;
+  position: fixed;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  overflow: scroll;
+  height: 100%;
+}
+
+header h1 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+section {
+  margin: 0 auto;
+  width: 710px;
+  float: right;
+  padding: 25px 0;
+}
+
+footer {
+  margin: 0 auto;
+  width: 710px;
+  float: right;
+  padding-bottom: 50px;
+  text-align: right;
+}
+
+@media print, screen and (max-width: 960px) {
+  .container {
+    width: auto;
+    margin: 0;
+  }
+
+  header, section {
+    float: none;
+    position: static;
+    width: auto;
+  }
+}
