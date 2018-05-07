@@ -18,7 +18,22 @@ header {
 
 header h1 {
   font-size: 26px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+}
+
+header p {
+  margin-bottom: 20px;
+}
+
+header ul {
+  line-height: 1.5;
+}
+
+header ul li {
+  padding: 3px 0;
+}
+
+header ul a {
 }
 
 footer {

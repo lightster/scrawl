@@ -5,71 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% seo %}
+    {% seo %}
+
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
-  <body class="{{ page.width }}">
+  <body class="{{ page.width | default: site.default_width }}">
 
     <div class="container">
-
       <header>
         {% if site.title and site.title != page.title %}
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
+          <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
         {% endif %}
 
         {% if site.description  %}
-        <p><small>{{ site.description }}</small></p>
+          <p><small>{{ site.description }}</small></p>
         {% endif %}
 
-        <ul>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-          <li>A</li>
-        </ul>
+        {% if site.pages %}
+          {% assign docs = site.pages | sort: 'title' | sort: 'order', 'last' %}
+          <ul>
+            {% for doc in docs %}
+              <li><a href="{{ doc.url | absolute_url }}">{{ doc.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
       </header>
 
       <section class="markdown-body">

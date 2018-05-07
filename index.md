@@ -1,7 +1,0 @@
----
-layout: default
-width: fixed
-other_link: ./fluid
----
-
-{% include_relative content.md %}

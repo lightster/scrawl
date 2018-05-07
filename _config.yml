@@ -18,3 +18,17 @@ exclude:
 plugins:
   - jekyll-github-metadata
   - jekyll-seo-tag
+
+default_width: fixed
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+
+collections:
+  pages:
+    output: true
+    permalink: /:categories/:name

@@ -1,6 +1,7 @@
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page]({{ page.other_link }}).
+[A fluid-width version of this page]({% link _pages/fluid.md %}).
+[A fixed-width version of this page]({% link _pages/fixed.md %}).
 
 There should be whitespace between paragraphs.
 
