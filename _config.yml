@@ -27,6 +27,7 @@ defaults:
       type: "pages"
     values:
       layout: default
+      hide_in_nav: false
 
 collections:
   pages:

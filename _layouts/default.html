@@ -25,7 +25,9 @@
           {% assign docs = site.pages | sort: 'title' | sort: 'order', 'last' %}
           <ul>
             {% for doc in docs %}
-              <li><a href="{{ doc.url | absolute_url }}">{{ doc.title }}</a></li>
+              {% unless doc.hide_in_nav %}
+                <li><a href="{{ doc.url | absolute_url }}">{{ doc.title }}</a></li>
+              {% endunless %}
             {% endfor %}
           </ul>
         {% endif %}
