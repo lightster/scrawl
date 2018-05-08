@@ -1,5 +1,9 @@
 ---
+title: Big Nav
+layout: post
+permalink: /big-nav
 order: 99
+
 nav_pages:
  - title: Accio
    order: Accio

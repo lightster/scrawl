@@ -30,9 +30,9 @@
           {% assign docs = docs | sort: 'order' %}
           <ul>
             {% for doc in docs %}
-              {% unless doc.hide_in_nav %}
+              {% if doc.hide_in_nav != true and doc.title %}
                 <li><a href="{{ doc.url | absolute_url }}">{{ doc.title }}</a></li>
-              {% endunless %}
+              {% endif %}
             {% endfor %}
           </ul>
         {% endif %}

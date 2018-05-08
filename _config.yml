@@ -21,14 +21,4 @@ plugins:
 
 default_width: fixed
 
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: post
-
-collections:
-  pages:
-    output: true
-    permalink: /:categories/:name
+  - jekyll-seo-tag
