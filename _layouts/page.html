@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
-  <body class="{{ page.width | default: site.default_width }}">
+  <body class="{{ page.width | default: site.default_width | default: 'fixed' }}">
 
     <div class="container">
       <header>

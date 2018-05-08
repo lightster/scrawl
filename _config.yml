@@ -27,5 +27,3 @@ plugins:
   - jekyll-titles-from-headings
 
   - jekyll-seo-tag
-
-default_width: fixed
