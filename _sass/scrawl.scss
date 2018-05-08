@@ -11,7 +11,7 @@ header {
   float: left;
   position: fixed;
   padding-top: 25px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   overflow-y: auto;
   height: 100%;
 }
@@ -26,20 +26,12 @@ header p {
 }
 
 header ul {
+  font-size: 16px;
   line-height: 1.5;
 }
 
 header ul li {
   padding: 3px 0;
-}
-
-header ul a {
-}
-
-footer {
-  margin: 0 auto;
-  padding-bottom: 50px;
-  text-align: right;
 }
 
 body.fluid {
@@ -70,25 +62,24 @@ body.fixed {
 }
 
 @media all and (max-width: 960px) {
-  body.fluid {
+  body.fluid, body.fixed {
+    header {
+      border-bottom: 1px solid #dbdddf;
+    }
+
+    .container {
+      width: auto;
+    }
+
     header, section {
       float: none;
       position: static;
       width: auto;
       padding: 25px 0;
     }
-  }
 
-  body.fixed {
-    .container {
-      width: auto;
-      margin: 0;
-    }
-
-    header, section {
+    footer {
       float: none;
-      position: static;
-      width: auto;
     }
   }
 }

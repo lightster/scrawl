@@ -22,7 +22,12 @@
         {% endif %}
 
         {% if site.pages %}
-          {% assign docs = site.pages | sort: 'title' | sort: 'order', 'last' %}
+          {% if page.nav_pages %}
+            {% assign docs = page.nav_pages %}
+          {% else %}
+            {% assign docs = site.pages %}
+          {% endif %}
+          {% assign docs = docs | sort: 'order' %}
           <ul>
             {% for doc in docs %}
               {% unless doc.hide_in_nav %}
