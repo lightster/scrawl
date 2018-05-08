@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: default
+layout: page
 order: 1
 hide_in_nav: yes
 ---
