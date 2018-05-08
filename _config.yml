@@ -1,9 +1,9 @@
 title: "Scrawl Jekyll Theme"
 description: >
   Based on
-  <a href="https://github.com/pages-themes/primer">Primer</a>,
+  [Primer](https://github.com/pages-themes/primer),
   inspired by
-  <a href="https://github.com/pages-themes/minimal">Minimal</a>
+  [Minimal](https://github.com/pages-themes/minimal)
 
 sass:
   style: compressed

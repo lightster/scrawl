@@ -26,7 +26,7 @@
         {% endif %}
 
         {% if site.description  %}
-          <p><small>{{ site.description }}</small></p>
+          <p><small>{{ site.description | markdownify }}</small></p>
         {% endif %}
 
         {% if site.pages %}
