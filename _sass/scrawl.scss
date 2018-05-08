@@ -34,6 +34,10 @@ header ul li {
   padding: 3px 0;
 }
 
+footer {
+  text-align: right;
+}
+
 body.fluid {
   section {
     left: 295px;
@@ -54,11 +58,6 @@ body.fixed {
     float: right;
     padding: 25px 0;
   }
-
-  footer {
-    width: 710px;
-    float: right;
-  }
 }
 
 @media all and (max-width: 960px) {
@@ -76,10 +75,6 @@ body.fixed {
       position: static;
       width: auto;
       padding: 25px 0;
-    }
-
-    footer {
-      float: none;
     }
   }
 }
