@@ -16,6 +16,10 @@
     {% seo title=false %}
 
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+
+    <script src="{{ '/assets/js/script.js' | relative_url }}" defer></script>
+    <script src="{{ '/assets/js/turbolinks.js' | relative_url }}" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous" defer></script>
   </head>
   <body class="{{ page.width | default: site.default_width | default: 'fixed' }}">
 
@@ -39,7 +43,7 @@
           <ul>
             {% for doc in docs %}
               {% if doc.hide_in_nav != true and doc.title %}
-                <li><a href="{{ doc.url | absolute_url }}">{{ doc.title }}</a></li>
+                <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
               {% endif %}
             {% endfor %}
           </ul>
@@ -60,8 +64,6 @@
 
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
     {% if site.google_analytics %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
