@@ -1,7 +1,7 @@
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
- - [A fluid-width version of this page]({% link _pages/fluid.md %})
- - [A fixed-width version of this page]({% link _pages/fixed.md %})
+ - [A fluid-width version of this page]({{ baseurl }}{% link _pages/fluid.md %})
+ - [A fixed-width version of this page]({{ baseurl }}{% link _pages/fixed.md %})
 
 There should be whitespace between paragraphs.
 
