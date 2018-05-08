@@ -17,4 +17,13 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll", "~> 3.7"
   spec.add_runtime_dependency 'jekyll-github-metadata', '~> 2.9'
   spec.add_runtime_dependency 'jekyll-seo-tag', '~> 2.0'
+
+  spec.add_runtime_dependency 'jekyll-coffeescript'
+  spec.add_runtime_dependency 'jekyll-gist'
+  spec.add_runtime_dependency 'jekyll-paginate'
+  spec.add_runtime_dependency 'jekyll-relative-links'
+  spec.add_runtime_dependency 'jekyll-optional-front-matter'
+  spec.add_runtime_dependency 'jekyll-readme-index'
+  spec.add_runtime_dependency 'jekyll-default-layout'
+  spec.add_runtime_dependency 'jekyll-titles-from-headings'
 end
