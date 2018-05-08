@@ -12,7 +12,9 @@ exclude:
   - '*.gemspec'
   - 'Gemfile*'
   - bin
-  - LICENSE.txt
+  - '*.gem'
+  - Makefile
+  - LICENSE
   - README.md
 
 plugins:
