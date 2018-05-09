@@ -17,7 +17,7 @@ document.addEventListener('turbolinks:load', function() {
         if (tagName == parent.tagName) {
           $previous = $('<li>');
           $previous.append(
-            $('<a data-turbolinks="false">').attr('href', '#' + $header.attr('id')).append(
+            $('<a>').attr('href', '#' + $header.attr('id')).append(
               $('<span>').append(bullet + (++parent.count))
             ).append(
               $('<span>').append($header.text())
