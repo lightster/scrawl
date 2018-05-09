@@ -15,11 +15,9 @@
 
     {% seo title=false %}
 
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/styles.css?v=' | append: site.github.build_revision | relative_url }}">
 
-    <script src="{{ '/assets/js/jquery.slim.min.js' | relative_url }}" defer></script>
-    <script src="{{ '/assets/js/script.js' | relative_url }}" defer></script>
-    <script src="{{ '/assets/js/turbolinks.js' | relative_url }}" defer></script>
+    <script src="{{ '/assets/scripts.js?v=' | append: site.github.build_revision | relative_url }}" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous" defer></script>
   </head>
   <body class="{{ page.width | default: site.default_width | default: 'fixed' }}">
