@@ -38,6 +38,23 @@ footer {
   text-align: right;
 }
 
+.toc span {
+  display: table-cell;
+}
+
+.toc span:first-child {
+  padding-right: 0.5em;
+}
+
+.toc ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.toc ol ol {
+  padding-left: 32px;
+}
+
 body.fluid {
   section {
     left: 295px;

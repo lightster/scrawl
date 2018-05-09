@@ -4,4 +4,8 @@ layout: page
 
 {{ '# ' | append: page.title | markdownify }}
 
+{% if toc != false %}
+  <toc></toc>
+{% endif %}
+
 {{ content }}
