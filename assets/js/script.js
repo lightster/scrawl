@@ -8,6 +8,19 @@ document.addEventListener('turbolinks:load', function() {
       return;
     }
 
+    var createListLink = function (url, bullet, link_text) {
+      $previous = $('<li>');
+      $previous.append(
+        $('<a>').attr('href', url).append(
+          $('<span>').append(bullet)
+        ).append(
+          $('<span>').append(link_text)
+        )
+      );
+
+      return $previous;
+    };
+
     var buildRecursively = function (parent, headers, bullet) {
       var $previous = null;
       while (headers.length) {
@@ -15,13 +28,10 @@ document.addEventListener('turbolinks:load', function() {
         var tagName = $header.prop('tagName');
 
         if (tagName == parent.tagName) {
-          $previous = $('<li>');
-          $previous.append(
-            $('<a>').attr('href', '#' + $header.attr('id')).append(
-              $('<span>').append(bullet + (++parent.count))
-            ).append(
-              $('<span>').append($header.text())
-            )
+          $previous = createListLink(
+            '#' + $header.attr('id'),
+            bullet + (++parent.count),
+            $header.text()
           );
           parent.$.append($previous);
 
