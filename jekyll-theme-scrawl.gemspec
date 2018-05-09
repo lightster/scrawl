@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-scrawl"
-  spec.version       = "0.1.3"
+  spec.version       = "0.1.4"
   spec.authors       = ["Matt Light"]
   spec.email         = ["matt.light@lightdatasys.com"]
 
@@ -16,10 +16,10 @@ Gem::Specification.new do |spec|
 
   # force included by GitHub Pages
   spec.add_runtime_dependency "jekyll", "~> 3.7"
-  spec.add_runtime_dependency 'jekyll-coffeescript', '~> 1.1.1'
-  spec.add_runtime_dependency 'jekyll-gist', '~> 1.5.0'
+  spec.add_runtime_dependency 'jekyll-coffeescript', '~> 1.1'
+  spec.add_runtime_dependency 'jekyll-gist', '~> 1.5'
   spec.add_runtime_dependency 'jekyll-github-metadata', '~> 2.9'
-  spec.add_runtime_dependency 'jekyll-paginate', '~> 1.1.0'
+  spec.add_runtime_dependency 'jekyll-paginate', '~> 1.1'
   spec.add_runtime_dependency 'jekyll-relative-links', '~> 0.5.3'
   spec.add_runtime_dependency 'jekyll-optional-front-matter', '~> 0.3.0'
   spec.add_runtime_dependency 'jekyll-readme-index', '~> 0.2.0'
