@@ -4,7 +4,7 @@ layout: default
 
 {{ '# ' | append: page.title | markdownify }}
 
-{% if toc != false %}
+{% if page.toc != false %}
   <toc data-selector="{{ page.toc_selector | default: site.toc_selector | default: 'h2[id], h3[id], h4[id]' }}"></toc>
 {% endif %}
 
