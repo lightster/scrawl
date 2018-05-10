@@ -3,6 +3,8 @@ title: Big Nav
 layout: page
 order: 99
 category: example
+summary: |
+  This page has a lot of items in the navigation.
 
 nav_pages:
  - title: Accio
@@ -114,7 +116,5 @@ nav_pages:
  - title: Wingardium Leviosa
    order: Wingardium Leviosa
 ---
-
-This page has a lot of items in the navigation.
 
 {% include content.md %}
