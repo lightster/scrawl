@@ -1,6 +1,6 @@
 ---
 title: Fluid
-layout: post
+layout: page
 width: fluid
 category: example
 ---

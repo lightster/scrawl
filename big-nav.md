@@ -1,6 +1,6 @@
 ---
 title: Big Nav
-layout: post
+layout: page
 order: 99
 category: example
 

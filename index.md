@@ -1,7 +1,6 @@
 ---
 title: Home
-layout: page
-order: 1
+layout: default
 ---
 
 {% include content.md %}

@@ -1,85 +1,11 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  {% assign scrawl = site.data.scrawl %}
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: default
+---
 
-    <title>
-      {% if page.title == "Home" %}
-        {{ site.title }}
-      {% else %}
-        {{ page.title }} &middot; {{ site.title }}
-      {% endif %}
-    </title>
+{{ '# ' | append: page.title | markdownify }}
 
-    {% seo title=false %}
+{% if toc != false %}
+  <toc></toc>
+{% endif %}
 
-    <link rel="stylesheet" href="{{ '/assets/styles.css?v=' | append: site.github.build_revision | relative_url }}">
-
-    <script src="{{ '/assets/scripts.js?v=' | append: site.github.build_revision | relative_url }}" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous" defer></script>
-  </head>
-  <body class="{{ page.width | default: site.default_width | default: 'fixed' }}">
-
-    <div class="container">
-      <header>
-        {% if site.title and site.title != page.title %}
-          <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
-        {% endif %}
-
-        {% if site.description  %}
-          <p><small>{{ site.description | markdownify }}</small></p>
-        {% endif %}
-
-        {% if site.pages %}
-          {% if page.nav_pages %}
-            {% assign docs = page.nav_pages %}
-          {% else %}
-            {% assign docs = site.pages %}
-          {% endif %}
-
-          {% assign docs = docs | where_exp: 'doc', 'doc.hide_in_nav != true' %}
-          {% assign docs = docs | where_exp: 'doc', 'doc.title' %}
-
-          <nav>
-            {% include nav_category.html docs=docs category_key='' category_title='' %}
-            {% if scrawl and scrawl.categories %}
-              {% assign ordered_categories = scrawl.categories | sort: 'order' %}
-              {% for category in ordered_categories %}
-                {% assign category_key = category.key | default: category.title %}
-                {% include nav_category.html docs=docs category_key=category.key category_title=category.title %}
-              {% endfor %}
-            {% endif %}
-          </nav>
-        {% endif %}
-
-      </header>
-
-      <section class="markdown-body">
-        {{ content }}
-
-        <footer>
-          {% if site.github.private != true and site.github.license %}
-          <p>
-            This site is open source. {% github_edit_link "Improve this page" %}.
-          </p>
-          {% endif %}
-        </footer>
-      </section>
-
-    </div>
-
-    {% if site.google_analytics %}
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{ site.google_analytics }}', 'auto');
-      ga('send', 'pageview');
-    </script>
-    {% endif %}
-  </body>
-</html>
+{{ content }}

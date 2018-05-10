@@ -1,6 +1,6 @@
 ---
 title: Fixed
-layout: post
+layout: page
 width: fixed
 category: example
 ---
