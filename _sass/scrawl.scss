@@ -47,8 +47,11 @@ nav h2:first-child {
   padding-top: 0;
 }
 
-footer {
+footer p:first-child {
   text-align: right;
+  border-top: 1px solid #dbdddf;
+  margin-top: 25px;
+  padding-top: 15px;
 }
 
 .toc span {
