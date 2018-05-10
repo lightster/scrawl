@@ -30,3 +30,5 @@ plugins:
   - jekyll-titles-from-headings
   # required by {% seo %} tag
   - jekyll-seo-tag
+
+permalink: pretty
