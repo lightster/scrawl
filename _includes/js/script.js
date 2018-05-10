@@ -3,7 +3,12 @@ document.addEventListener('turbolinks:load', function() {
   anchors.add('section h2[id], section h3[id], section h4[id], section h5[id], section h6[id]');
 
   $('toc', 'body').html(function () {
-    var $headers = $(this).nextAll(':header[id]');
+    var selector = $(this).data('selector');
+    if (!selector) {
+      selector = ':header[id]';
+    }
+
+    var $headers = $(this).nextAll(selector);
 
     if (!$headers.length) {
       return;
@@ -23,7 +28,7 @@ document.addEventListener('turbolinks:load', function() {
     };
 
     var buildRecursively = function (parent, headers, bullet) {
-      var $previous = null;
+      var $previous = parent.$;
       while (headers.length) {
         var $header = $(headers[0]);
         var tagName = $header.prop('tagName');
@@ -43,7 +48,7 @@ document.addEventListener('turbolinks:load', function() {
             '$': $('<ol>'),
             'count': 0
           };
-          buildRecursively(child, headers, bullet + parent.count + ".");
+          buildRecursively(child, headers, (parent.count > 0 ? bullet + parent.count + "." : ''));
           $previous.append(child.$);
         } else {
           return;
@@ -51,13 +56,13 @@ document.addEventListener('turbolinks:load', function() {
       }
     };
 
-    var $toc = $('<ol>');
+    var $toc = $('<div class="toc">');
     buildRecursively(
-      {'tagName': 'H1', '$': $toc, 'count': 0},
+      {'tagName': 'H0', '$': $toc, 'count': 0},
       $headers.toArray(),
       ""
     );
 
-    return $('<div class="toc">').append($toc);
+    return $toc;
   });
 })
