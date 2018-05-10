@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
+  {% assign scrawl = site.data.scrawl %}
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,15 +39,22 @@
           {% else %}
             {% assign docs = site.pages %}
           {% endif %}
-          {% assign docs = docs | sort: 'order' %}
-          <ul>
-            {% for doc in docs %}
-              {% if doc.hide_in_nav != true and doc.title %}
-                <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
-              {% endif %}
-            {% endfor %}
-          </ul>
+
+          {% assign docs = docs | where_exp: 'doc', 'doc.hide_in_nav != true' %}
+          {% assign docs = docs | where_exp: 'doc', 'doc.title' %}
+
+          <nav>
+            {% include nav_category.html docs=docs category_key='' category_title='' %}
+            {% if scrawl and scrawl.categories %}
+              {% assign ordered_categories = scrawl.categories | sort: 'order' %}
+              {% for category in ordered_categories %}
+                {% assign category_key = category.key | default: category.title %}
+                {% include nav_category.html docs=docs category_key=category.key category_title=category.title %}
+              {% endfor %}
+            {% endif %}
+          </nav>
         {% endif %}
+
       </header>
 
       <section class="markdown-body">

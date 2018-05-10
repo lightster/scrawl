@@ -1,8 +1,8 @@
 document.addEventListener('turbolinks:load', function() {
-  anchors.add();
+  anchors.add('section h2[id], section h3[id], section h4[id], section h5[id], section h6[id]');
 
   $('toc', 'body').html(function () {
-    var $headers = $(':header[id]');
+    var $headers = $(this).nextAll(':header[id]');
 
     if (!$headers.length) {
       return;

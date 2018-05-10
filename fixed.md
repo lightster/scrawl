@@ -2,7 +2,7 @@
 title: Fixed
 layout: post
 width: fixed
-permalink: /fixed
+category: example
 ---
 
 This page has a fixed width in wide browser windows.

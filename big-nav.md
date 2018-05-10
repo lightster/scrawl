@@ -1,8 +1,8 @@
 ---
 title: Big Nav
 layout: post
-permalink: /big-nav
 order: 99
+category: example
 
 nav_pages:
  - title: Accio
