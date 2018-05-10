@@ -2,12 +2,6 @@
 layout: default
 ---
 
-{% assign scrawl = site.data.scrawl %}
-
-{{ '# ' | append: page.title | markdownify }}
-
 <div class="sitemap">
-  {% include nav.html %}
+  {{ content }}
 </div>
-
-{{ content }}

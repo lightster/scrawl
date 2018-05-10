@@ -1,4 +1,5 @@
 ---
 title: Sitemap
-layout: sitemap
+layout: default
+width: headerless sitemap
 ---
