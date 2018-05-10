@@ -2,16 +2,18 @@
 {% assign categories_with_pages = docs | group_by: 'category' | map: 'name' %}
 
 {% if categories_with_pages contains include.category_key %}
-  {% if include.category_title and include.category_title != '' %}
-    <h2>{{ include.category_title }}</h2>
-  {% endif %}
+  <div class="nav-category">
+    {% if include.category_title and include.category_title != '' %}
+      <h2>{{ include.category_title }}</h2>
+    {% endif %}
 
-  <ul>
-    {% for doc in docs %}
-      {% assign doc_category = doc.category | default: '' %}
-      {% if doc_category == include.category_key %}
-        <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+    <ul>
+      {% for doc in docs %}
+        {% assign doc_category = doc.category | default: '' %}
+        {% if doc_category == include.category_key %}
+          <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
 {% endif %}

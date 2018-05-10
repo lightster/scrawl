@@ -34,7 +34,7 @@ nav ul li {
   padding: 2px 0;
 }
 
-nav h2 {
+header nav h2 {
   font-style: normal;
   font-weight: bold;
   color: #888;
@@ -43,7 +43,7 @@ nav h2 {
   font-size: 14px;
 }
 
-nav h2:first-child {
+nav div:first-child h2 {
   padding-top: 0;
 }
 
@@ -73,6 +73,30 @@ footer p:first-child {
 
 a.anchorjs-link:hover {
   text-decoration: none;
+}
+
+.sitemap {
+  nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+
+    flex-flow: row wrap;
+  }
+
+  h2 {
+    border: 0;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .nav-category {
+    padding: 5px;
+    width: 230px;
+    margin-top: 10px;
+  }
 }
 
 body.fluid {
