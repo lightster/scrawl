@@ -1,0 +1,12 @@
+<header>
+  {% if site.title and site.title != page.title %}
+    <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
+  {% endif %}
+
+  {% if site.description %}
+    <small class="description">{{ site.description | markdownify }}</small>
+  {% endif %}
+
+  {% include nav.html %}
+
+</header>
