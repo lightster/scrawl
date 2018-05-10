@@ -21,5 +21,5 @@
     <script src="{{ '/assets/scripts.js?v=' | append: site.github.build_revision | relative_url }}" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous" defer></script>
   </head>
-  <body class="{{ include.width | default: page.width | default: site.default_width | default: 'fixed' }}">
+  <body class="{{ include.width | default: page.width | default: site.page_width | default: 'fixed' }}">
     <div class="container">
