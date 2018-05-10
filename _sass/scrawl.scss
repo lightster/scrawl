@@ -139,7 +139,7 @@ body.headerless.sitemap header {
   }
 }
 
-@media all and (max-width: 960px) {
+@media all and (max-width: 1060px) {
   body.fluid, body.fixed {
     header {
       border-bottom: 1px solid #dbdddf;
@@ -153,6 +153,9 @@ body.headerless.sitemap header {
       float: none;
       position: static;
       width: auto;
+    }
+
+    section {
       padding: 25px 0;
     }
   }
