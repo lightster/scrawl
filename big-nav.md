@@ -117,4 +117,6 @@ nav_pages:
    order: Wingardium Leviosa
 ---
 
+## Harry Potter Spells
+
 {% include content.md %}
