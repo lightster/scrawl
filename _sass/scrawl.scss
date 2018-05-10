@@ -75,8 +75,9 @@ footer p:first-child {
   padding-left: 0;
 }
 
-.toc ol ol {
+.toc li > a+ol {
   padding-left: 32px;
+  margin-top: 0.25em;
 }
 
 a.anchorjs-link:hover {
