@@ -66,6 +66,7 @@ $(document).ready(function () {
   });
 
    var qs = lstrQuickSwitcher({
+    searchDelay: 100,
     searchCallback: function(searchText, resultHandler) {
       var options = [];
       $('header nav .nav-category').each(function () {
