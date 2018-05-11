@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  anchors.options.visible = 'touch';
   anchors.add('section h2[id], section h3[id], section h4[id], section h5[id], section h6[id]');
 
   $('toc', 'body').html(function () {
