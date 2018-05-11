@@ -80,7 +80,10 @@ $(document).ready(function () {
         });
       })
       var filteredOptions = options.filter(function(item) {
-        return resultHandler.filters.isMatch(searchText, item.text);
+        return resultHandler.filters.isMatch(
+          searchText.toLowerCase(),
+          item.text.toLowerCase()
+        );
       });
 
       resultHandler.setResults(filteredOptions);
