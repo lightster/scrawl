@@ -76,14 +76,15 @@ $(document).ready(function () {
           options.push({
             text: $a.text(),
             description: category,
-            url: $a.attr('href')
+            url: $a.attr('href'),
+            search: ($a.text() + ' ' + category).toLowerCase()
           });
         });
       })
       var filteredOptions = options.filter(function(item) {
         return resultHandler.filters.isMatch(
           searchText.toLowerCase(),
-          item.text.toLowerCase()
+          item.search
         );
       });
 
