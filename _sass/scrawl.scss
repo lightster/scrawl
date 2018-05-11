@@ -93,6 +93,10 @@ body.fluid {
   }
 }
 
+.hotdog {
+  display: none;
+}
+
 body.fixed {
   .container {
     width: 1012px;
@@ -151,6 +155,7 @@ body.headerless.sitemap header {
   body.fluid, body.fixed {
     header {
       border-bottom: 1px solid #dbdddf;
+      padding-bottom: 0;
     }
 
     .container {
@@ -165,6 +170,24 @@ body.headerless.sitemap header {
 
     section {
       padding: 25px 0;
+    }
+
+    .hotdog {
+      display: none;
+      display: inline-block;
+      float: right;
+      margin-top: 20px;
+    }
+
+    .hotdog div {
+      width: 35px;
+      height: 3px;
+      background-color: #666666;
+      margin: 4px 0;
+    }
+
+    header nav {
+      display: none;
     }
   }
 }
