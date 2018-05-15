@@ -6,7 +6,7 @@
   </div>
 
   {% if site.title and site.title != page.title %}
-    <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
+    <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
   {% endif %}
 
   {% if site.description %}

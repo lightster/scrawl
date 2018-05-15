@@ -1,7 +1,7 @@
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
- - [A fluid-width version of this page]({{ '/fluid' | absolute_url }})
- - [A fixed-width version of this page]({{ '/fixed' | absolute_url }})
+ - [A fluid-width version of this page]({{ '/fluid' | relative_url }})
+ - [A fixed-width version of this page]({{ '/fixed' | relative_url }})
 
 There should be whitespace between paragraphs.
 
