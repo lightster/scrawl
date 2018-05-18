@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>
-      {% if page.title == "Home" %}
+      {% if page.title == "Home" or page.title == "" or page.title == null %}
         {{ site.title }}
       {% else %}
         {{ page.title }} &middot; {{ site.title }}

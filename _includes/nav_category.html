@@ -11,7 +11,7 @@
       {% for doc in docs %}
         {% assign doc_category = doc.category | default: '' %}
         {% if doc_category == include.category_key %}
-          <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
+          <li><a href="{{ doc.url | relative_url }}">{{ doc.nav_title | default: doc.title }}</a></li>
         {% endif %}
       {% endfor %}
     </ul>

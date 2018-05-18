@@ -1,5 +1,6 @@
 ---
-title: Home
+title: ""
+nav_title: Home
 layout: default
 ---
 
