@@ -16,6 +16,7 @@ exclude:
   - Makefile
   - LICENSE
   - README.md
+  - vendor
 
 plugins:
   # force included by GitHub Pages
