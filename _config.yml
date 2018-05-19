@@ -17,6 +17,7 @@ exclude:
   - LICENSE
   - README.md
   - vendor
+  - docker*
 
 plugins:
   # force included by GitHub Pages

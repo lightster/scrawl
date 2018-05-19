@@ -1,11 +1,11 @@
 version: "3"
 services:
   jekyll:
-    command: jekyll serve
-    image: jekyll/jekyll:latest
+    build:
+      context: .
+      dockerfile: docker/jekyll/Dockerfile
     volumes:
-      - $PWD:/srv/jekyll:delegated
-      - $PWD/vendor/bundle:/usr/local/bundle:delegated
+      - $PWD:/jekyll/source:delegated
     ports:
       - 4000
     networks:
