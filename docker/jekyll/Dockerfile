@@ -10,6 +10,7 @@ RUN mkdir -p /jekyll/source /jekyll/destination \
   && adduser  -Su 1000 -G jekyll jekyll \
   && chown -R jekyll:jekyll /jekyll/
 
+USER jekyll
 EXPOSE 4000
 
 VOLUME /jekyll/source /jekyll/destination
