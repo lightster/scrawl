@@ -13,7 +13,6 @@ RUN mkdir -p /jekyll/source /jekyll/destination \
 USER jekyll
 EXPOSE 4000
 
-VOLUME /jekyll/source /jekyll/destination
 WORKDIR /jekyll/source
 
 CMD jekyll serve \
