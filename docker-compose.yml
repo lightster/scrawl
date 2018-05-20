@@ -7,7 +7,7 @@ services:
     volumes:
       - $PWD:/jekyll/source:delegated
     ports:
-      - 4000
+      - ${JEKYLL_PORT:-80}
     networks:
       default:
       pier-buoy:

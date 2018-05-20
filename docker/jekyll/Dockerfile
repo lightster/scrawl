@@ -12,11 +12,12 @@ RUN mkdir -p /jekyll/source /jekyll/destination \
   && setcap 'cap_net_bind_service=+ep' /usr/local/bin/ruby
 
 USER jekyll
-EXPOSE 4000
+EXPOSE 80
 
 WORKDIR /jekyll/source
 
 CMD jekyll serve \
   --host 0.0.0.0 \
+  --port ${JEKYLL_PORT:-80} \
   --source /jekyll/source \
   --destination /jekyll/destination
