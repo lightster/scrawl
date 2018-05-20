@@ -9,17 +9,15 @@ sass:
   style: compressed
 
 exclude:
+  - _site
+  - '*.gem'
   - '*.gemspec'
   - 'Gemfile*'
   - bin
-  - '*.gem'
-  - _site
-  - Makefile
+  - docker-compose.yml
   - LICENSE
+  - Makefile
   - README.md
-  - vendor
-  - docker
-  - Dockerfile
 
 plugins:
   # force included by GitHub Pages

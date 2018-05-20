@@ -1,9 +1,7 @@
 version: "3"
 services:
   jekyll:
-    build:
-      context: .
-      dockerfile: docker/jekyll/Dockerfile
+    image: lightster/github-pages:latest
     volumes:
       - $PWD:/jekyll/source:delegated
     ports:
