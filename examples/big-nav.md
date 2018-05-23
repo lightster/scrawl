@@ -1,7 +1,7 @@
 ---
 title: Big Nav
 layout: page
-order: 99
+order: ZZ-Big Nav
 category: example
 summary: |
   This page has a lot of items in the navigation.

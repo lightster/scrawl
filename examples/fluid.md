@@ -1,5 +1,6 @@
 ---
 title: Fluid
+order: Fluid
 layout: page
 width: fluid
 category: example

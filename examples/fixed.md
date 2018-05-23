@@ -1,5 +1,6 @@
 ---
 title: Fixed
+order: Fixed
 layout: page
 width: fixed
 category: example
