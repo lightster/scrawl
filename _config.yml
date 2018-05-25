@@ -5,8 +5,6 @@ description: >-
   inspired by
   [Minimal](https://github.com/pages-themes/minimal)
 
-theme: jekyll-theme-scrawl
-
 sass:
   style: compressed
 
