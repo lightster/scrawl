@@ -3,7 +3,7 @@ services:
   jekyll:
     image: lightster/github-pages:latest
     volumes:
-      - $PWD:/jekyll/source:delegated
+      - $PWD:/jekyll/source:cached
     ports:
       - ${JEKYLL_PORT:-80}
     networks:
