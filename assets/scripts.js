@@ -1,4 +1,4 @@
 ---
 ---
 
-{% include {{ site.theme | default: 'jekyll-theme-scrawl' }}.js %};
+{% include jekyll-theme-scrawl.js %};
