@@ -11,6 +11,8 @@ services:
       buoy:
         aliases:
           - "${BUOY_HOST:-scrawl}"
+    environment:
+      - JEKYLL_PORT
 
 networks:
   buoy:
