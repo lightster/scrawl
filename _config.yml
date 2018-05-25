@@ -1,9 +1,8 @@
-title: "Scrawl Jekyll Theme"
+title: "The Scrawl theme"
 description: >-
-  Based on
-  [Primer](https://github.com/pages-themes/primer),
-  inspired by
-  [Minimal](https://github.com/pages-themes/minimal)
+  A theme for [Jekyll](https://jekyllrb.com/)
+  based on
+  [Primer](https://github.com/pages-themes/primer)
 
 sass:
   style: compressed
@@ -17,7 +16,6 @@ exclude:
   - docker-compose.yml
   - LICENSE
   - Makefile
-  - README.md
 
 plugins:
   # force included by GitHub Pages

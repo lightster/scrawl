@@ -1,28 +1,18 @@
 # The Scrawl theme
 
-Scrawl is a Jekyll theme based on [the Primer theme](https://github.com/pages-themes/primer) by GitHub.
+**Organize documentation, playbooks, and other composition with Scrawl**
+
+Scrawl is a page-centric theme for Jekyll.  Rather catering to posts like most Jekyll themes, Scrawl focuses on providing categorization and navigation for pages.
+
+The Scrawl theme is based on GitHub's [Primer theme](https://github.com/pages-themes/primer) and the left navigation is inspired by Steve Smith's [Minimal](https://github.com/orderedlist/minimal).
 
 ## Installation
 
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "jekyll-theme-scrawl"
-```
-
-And add this line to your Jekyll site's `_config.yml`:
+Set `remote_theme` to `jekyll-theme-scrawl` in your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: jekyll-theme-scrawl
+remote_theme: jekyll-theme-scrawl
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install jekyll-theme-scrawl
 
 ## Usage
 
@@ -30,13 +20,12 @@ TODO: Write usage instructions here. Describe your available layouts, includes, 
 
 ## Development
 
-To set up your environment to develop this theme, run `bundle install`.
+To set up your environment to develop this theme, fork this repo, clone your fork to your localhost, and run `bundle install`.
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+The theme is setup just like a normal Jekyll site. Run `bundle exec jekyll serve` and open your browser to [`http://localhost:4000`](http://localhost:4000). As you make changes to your clone of the theme, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
 
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-scrawl.gemspec` accordingly.
+When the theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git are bundled.
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The theme is available as open source under the terms of the [MIT License](LICENSE).
