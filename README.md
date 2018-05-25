@@ -4,14 +4,14 @@
 
 Scrawl is a page-centric theme for Jekyll.  Rather catering to posts like most Jekyll themes, Scrawl focuses on providing categorization and navigation for pages.
 
-The Scrawl theme is based on GitHub's [Primer theme](https://github.com/pages-themes/primer) and the left navigation is inspired by Steve Smith's [Minimal](https://github.com/orderedlist/minimal).
+*The Scrawl theme is based on GitHub's [Primer theme](https://github.com/pages-themes/primer) and the left navigation is inspired by Steve Smith's [Minimal](https://github.com/orderedlist/minimal).*
 
 ## Installation
 
-Set `remote_theme` to `jekyll-theme-scrawl` in your Jekyll site's `_config.yml`:
+Set Jekyll's `_config.yml` to pull the theme from the `lightster/jekyll-theme-scrawl` remote theme:
 
 ```yaml
-remote_theme: jekyll-theme-scrawl
+remote_theme: lightster/jekyll-theme-scrawl
 ```
 
 ## Usage
