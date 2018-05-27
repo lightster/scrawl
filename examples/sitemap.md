@@ -1,7 +1,6 @@
 ---
 title: Sitemap
 order: Sitemap
-layout: default
+layout: sitemap
 category: example
-width: no-nav sitemap
 ---

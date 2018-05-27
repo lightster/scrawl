@@ -114,7 +114,7 @@ body.fixed {
   }
 }
 
-body.no-nav {
+body.no-nav, body.sitemap {
   .container {
     max-width: 1012px;
   }
@@ -128,7 +128,7 @@ body.no-nav {
   }
 }
 
-body.no-nav.sitemap header {
+body.sitemap header {
   nav {
     padding: 0;
     margin: 0;
