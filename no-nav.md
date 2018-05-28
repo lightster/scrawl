@@ -1,7 +1,7 @@
 ---
 title: No Nav
 order: No Nav
-layout: default
+layout: base
 width: no-nav
 category: example
 summary: |

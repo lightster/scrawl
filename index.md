@@ -1,7 +1,6 @@
 ---
 title: ""
 nav_title: Home
-layout: default
 ---
 
 {% capture raw_content %}{% include_relative README.md %}{% endcapture %}
