@@ -2,11 +2,11 @@
 layout: default
 ---
 
-{% if page.title %}
+{% if page.title and page.title != '' %}
   {{ '# ' | append: page.title | markdownify }}
 {% endif %}
 
-{% if page.summary %}
+{% if page.summary and page.summary != '' %}
   {{ page.summary | markdownify }}
 {% endif %}
 
