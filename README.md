@@ -40,7 +40,7 @@ Scrawl provides the following layouts:
    - A table of contents is displayed below the page title and summary.  The table of contents is generated based on the page's level 2, 3, and 4 headers (`<h2>`, `<h3>`, and `<h4>` tags).
  - `sitemap` — The `sitemap` layout breaks the navigation into four columns that takes up the width of the layout.
 
-You can set the layout for a page in the page's Jekyll front page:
+You can set the layout for a page in the page's Jekyll front matter:
 ```yaml
 ---
 layout: base
