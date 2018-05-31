@@ -54,6 +54,13 @@ For the `default` and `page` layouts, there is a `width` setting for controlling
  - `fluid` - The `fluid` width takes up the width of the browser window.  If the browser window is not wide enough, the navigation is moved into a hamburger menu.
  - `no-nav` – The `no-nav` width behaves like the `fixed` width setting, but it removes the navigation, allowing the content pane to take up the entirety of the fixed width.
 
+You can set the width for a page in the page's Jekyll front matter:
+```yaml
+---
+width: fluid
+---
+```
+
 #### Mobile-friendly
 
 All layouts and widths are mobile-friendly.
