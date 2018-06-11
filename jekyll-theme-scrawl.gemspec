@@ -14,5 +14,5 @@ Gem::Specification.new do |spec|
     f.match(%r{^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md)|$)))}i)
   end
 
-  spec.add_runtime_dependency "github-pages", "~> 183"
+  spec.add_runtime_dependency "github-pages", "~> 186"
 end
