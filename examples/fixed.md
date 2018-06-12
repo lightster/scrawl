@@ -8,4 +8,4 @@ summary: |
   This page has a fixed width in wide browser windows.
 ---
 
-{% include content.md %}
+{% include scrawl/content.md %}

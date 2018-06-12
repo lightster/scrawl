@@ -119,4 +119,4 @@ nav_pages:
 
 ## Harry Potter Spells
 
-{% include content.md %}
+{% include scrawl/content.md %}

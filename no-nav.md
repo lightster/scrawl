@@ -8,4 +8,4 @@ summary: |
   This page has a width that takes up the entire browser window.
 ---
 
-{% include content.md %}
+{% include scrawl/content.md %}

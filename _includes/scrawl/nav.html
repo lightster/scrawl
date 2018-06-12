@@ -11,13 +11,13 @@
   {% assign docs = docs | where_exp: 'doc', 'doc.title' %}
 
   <nav>
-    {% include nav_category.html docs=docs category_key='' category_title='' %}
+    {% include  scrawl/nav_category.html docs=docs category_key='' category_title='' %}
 
     {% if scrawl and scrawl.categories %}
       {% assign ordered_categories = scrawl.categories | sort: 'order' %}
       {% for category in ordered_categories %}
         {% assign category_key = category.key | default: category.title %}
-        {% include nav_category.html docs=docs category_key=category.key category_title=category.title %}
+        {% include  scrawl/nav_category.html docs=docs category_key=category.key category_title=category.title %}
       {% endfor %}
     {% endif %}
   </nav>
