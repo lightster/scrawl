@@ -18,4 +18,13 @@ layout: base
   {% assign content = content | remove: content_lines[i] %}
 {% endfor %}
 
+{% assign first_header = "## Installation" %}
+{% capture toc_and_first_header %}
+<toc></toc>
+
+{{ first_header }}
+{% endcapture %}
+
+{% assign content = content | replace: first_header, toc_and_first_header %}
+
 {{ content }}
