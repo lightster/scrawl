@@ -119,6 +119,14 @@ category: beverage
 ---
 ```
 
+### Custom CSS and JavaScript
+
+If you need to add custom CSS or JavaScript tags, you can create `_includes/head.html` and/or `_includes/foot.html` files containing the `<link>` and/or `<script>` tags you need added to your pages.
+
+For custom CSS, you will generally want to place `<link>` tags in `_includes/head.html`.
+
+For custom JavaScript, you will want to place your `<script>` tags in `_includes/head.html` if you are using the `defer` attribute or otherwise need the `<script>` tag to appear in the page's `<head>` tags.  If you are not using `defer` and do not need the JavaScript to load in the `<head>` tag, you should place your `<script>` tags in `_includes/foot.html` so they will be added just above the page's closing `</body>` tag.
+
 ## Development
 
 To set up your environment to develop this theme, fork this repo, clone your fork to your localhost, and run `bundle install`.
