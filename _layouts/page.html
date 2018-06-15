@@ -6,6 +6,12 @@ layout: base
   {{ '# ' | append: page.title | markdownify }}
 {% endif %}
 
+{% if page.reading_time != false %}
+  {% assign word_count = content | strip_html | number_of_words %}
+  {% assign reading_time = word_count | divided_by: 240 | ceil %}
+  <div class="reading-time">{{ reading_time }} minute read</div>
+{% endif %}
+
 {% if page.summary and page.summary != '' %}
   {{ page.summary | markdownify }}
 {% endif %}
