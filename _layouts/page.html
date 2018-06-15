@@ -8,7 +8,7 @@ layout: base
 
 {% if page.reading_time != false %}
   {% assign word_count = content | strip_html | number_of_words %}
-  {% assign reading_time = word_count | divided_by: 240 | ceil %}
+  {% assign reading_time = word_count | divided_by: 240.0 | ceil %}
   <div class="reading-time">{{ reading_time }} minute read</div>
 {% endif %}
 
