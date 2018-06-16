@@ -36,8 +36,9 @@ Scrawl provides the following layouts:
  - `base` — The `base` layout is the base layout used by all other layouts.  The base layout has two side-by-side independently scrolling panes.  The left pane contains the site title, the site description, and the navigation.  The right pane is wider and is used for displaying the content.
  - `page` — The `page` layout is the default layout that pages use.  The page layout is similar to the base layout but with a few additions:
    - The `title` value provided in the page's front matter is displayed as a header above the page content
-   - The `summary` value provided in the page's front matter is displayed below the page title
-   - A table of contents is displayed below the page title and summary.  The table of contents is generated based on the page's level 2, 3, and 4 headers (`<h2>`, `<h3>`, and `<h4>` tags).
+   - The calculated estimated reading time.  This can be disabled by setting `reading_time` to `false` in the page front matter.
+   - The `summary` value provided in the page's front matter is displayed below the page title and reading time
+   - A table of contents is displayed below the page title and summary.  The table of contents is generated based on the page's level 2, 3, and 4 headers (`<h2>`, `<h3>`, and `<h4>` tags). This can be disabled by setting `toc` to `false` in the page front matter.
  - `sitemap` — The `sitemap` layout breaks the navigation into four columns that takes up the width of the layout.
 
 You can set the layout for a page in the page's Jekyll front matter:
