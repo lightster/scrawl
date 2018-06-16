@@ -91,6 +91,24 @@ footer p:first-child {
   margin-top: 0.25em;
 }
 
+.footnote::before{
+  content: "[";
+}
+
+.footnote::after{
+  content: "]";
+}
+
+.footnotes {
+  li p {
+    margin: 0;
+  }
+
+  .reversefootnote {
+    display: none;
+  }
+}
+
 a.anchorjs-link:hover {
   text-decoration: none;
 }
