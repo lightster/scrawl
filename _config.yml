@@ -30,5 +30,6 @@ plugins:
   - jekyll-titles-from-headings
   # required by {% seo %} tag
   - jekyll-seo-tag
+  - jekyll-include-cache
 
 permalink: pretty

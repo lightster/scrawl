@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-scrawl"
-  spec.version       = "0.1.22"
+  spec.version       = "0.1.25"
   spec.authors       = ["Matt Light"]
   spec.email         = ["matt.light@lightdatasys.com"]
 
@@ -14,5 +14,6 @@ Gem::Specification.new do |spec|
     f.match(%r{^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md)|$)))}i)
   end
 
-  spec.add_runtime_dependency "github-pages", "~> 186"
+  spec.add_runtime_dependency "github-pages", "~> 188"
+  spec.add_runtime_dependency "jekyll-include-cache", "0.1.0"
 end

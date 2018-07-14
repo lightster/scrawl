@@ -13,6 +13,12 @@
     <div class="description">{{ site.description | markdownify }}</div>
   {% endif %}
 
-  {% include  scrawl/nav.html %}
+  {% if page.nav_pages %}
+    {% assign docs = page.nav_pages %}
+  {% else %}
+    {% assign docs = site.pages %}
+  {% endif %}
+
+  {% include scrawl/nav.html docs=docs scrawl=site.data.scrawl %}
 
 </header>
